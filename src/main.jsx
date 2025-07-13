@@ -14,6 +14,7 @@ import Help from './components/Help/Help';
 import UserDetails from './components/UserDetails/UserDetails';
 import Posts from './components/Posts/Posts';
 import PostDetail from './components/PostDetails/PostDetail';
+import ErrorPage from './components/ErrorPages/ErrorPage';
 
 
 
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Home></Home>,
+    errorElement:<ErrorPage></ErrorPage>,
         children: [
       {
         path: "about",
